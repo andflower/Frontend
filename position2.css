@@ -2,8 +2,8 @@
 /* 자식요소 position: absolute */
 
 body{
-    background-color: #222222;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 .parent{
@@ -19,23 +19,26 @@ body{
 }
 
 .child{
-    background-color: crimson;
+    background-color: rgb(255, 255, 255);
     position: absolute;
     /* content size */
     width: 100px;
-    height: 70px;
-    font-size: 50px;
+    height: 60px;
     text-align: center;
 }
 .child1{
     left: 0%;
     top: 50%;
-    transform: translate(-100%, -50%);
+    transform: translate(-105%, -50%);
 }
 .child2{
     left: 100%;
     top: 50%;
-    transform: translate(0%, -50%);
+    transform: translate(5%, -50%);
+}
+img{
+    width: 60%;
+    text-align: center;
 }
 /* text vertical align 확인 필요 */
 /* .child3{
