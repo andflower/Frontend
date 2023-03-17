@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float2</title>
+    <style>
+        body{
+            background-color: #222222;
+            color: white;
+        }
+        .parent {
+            border: 2px solid #ce3b21;
+            width: 1200px;
+            height: 500px;
+            overflow: hidden;
+            /* inline요소를 중앙으로 보냄 text-align: center */
+            text-align: center;
+        }
+        .child{
+            background-color: gold;
+            width: 200px;
+            height: 200px;
+            /* float 선언시 부모으로부터의 높이를 잃어버린다. */
+            /* 부모의 형식 지정된 블록에서 overflow: hidden;을 선언해야함 */
+            /* float: right; */
+            /* margin: auto; */
+            justify-content: center;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <span class="child">
+
+        </span>
+    </div>
+</body>
+</html>

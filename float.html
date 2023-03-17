@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        body{
+            background-color: #222222;
+            color: white;
+        }
+        .parent{
+            border: 2px solid #ce3b21;
+            width: 1200px;
+            /* height: 200px; */
+            overflow: hidden;
+        }
+        .child{
+            background-color: gold;
+            width: 200px;
+            height: 300px;
+            /* float 선언시 부모으로부터의 높이를 잃어버린다. */
+            /* 부모의 형식 지정된 블록에서 overflow: hidden;을 선언해야함 */
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+
+        </div>
+    </div>
+</body>
+</html>
