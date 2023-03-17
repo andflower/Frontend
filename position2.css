@@ -1,0 +1,44 @@
+/* 부모요소 position: relative */
+/* 자식요소 position: absolute */
+
+body{
+    background-color: #222222;
+    color: white;
+}
+
+.parent{
+    background-color: rgb(0, 255, 153);
+    border: 3px solid blue;
+    /* content size */
+    width: 1000px;
+    height: 500px;
+    /* 해당 컨텐츠 바디에 비례 parent 위치 */
+    margin: auto;
+    /* 부모요소 상대적 위치 */
+    position: relative;
+}
+
+.child{
+    background-color: crimson;
+    position: absolute;
+    /* content size */
+    width: 100px;
+    height: 70px;
+    font-size: 50px;
+    text-align: center;
+}
+.child1{
+    left: 0%;
+    top: 50%;
+    transform: translate(-100%, -50%);
+}
+.child2{
+    left: 100%;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+/* text vertical align 확인 필요 */
+/* .child3{
+    left: 100%;
+    top: 0%;
+} */

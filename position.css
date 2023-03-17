@@ -1,0 +1,32 @@
+/* 부모요소 position: relative */
+/* 자식요소 position: absolute */
+
+body{
+    background-color: #222222;
+    color: white;
+}
+
+.parent{
+    background-color: rgb(0, 255, 153);
+    border: 3px solid red;
+    /* content size */
+    width: 1000px;
+    height: 500px;
+    /* 해당 컨텐츠 바디에 비례 parent 위치 */
+    margin: auto;
+    /* 부모요소 상대적 위치 */
+    position: relative;
+}
+
+.child{
+    background-color: crimson;
+    position: absolute;
+    /* content size */
+    width: 20%;
+    height: 10%;
+    /* content position */
+    top: 45%;
+    left: 40%;
+    /* content size 만큼 */
+    /* transform: translate(50%, 50%); */
+}
