@@ -1,0 +1,84 @@
+p{
+    font-family: "Consolas";
+    font-size: 11px;
+    color: gold;
+    line-height: 1.7;               /* 줄간격 */
+}
+h2{
+    font-family: 'Rampart One', cursive;
+    color: rgb(255,255,255);
+}
+h4{
+    font: serif;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+h5{
+    font-family: 'katuri';
+    color:rgb(69, 189, 236);
+}
+hr {
+    height: 5px;
+    background-color: rgb(86, 235, 118);
+    border: none;
+}
+body{
+    background-color: #222222;
+    color: white;
+}
+
+/* default */
+/* display -> none일 경우 output X */
+/* div{
+    border: 3px dashed rgb(127, 209, 72);
+    display: inline;
+} */
+
+/* border-syle -> dashed(점선) */
+/* display 특성 inline-block -> 인라인이지만 블록의 옵션을 사용할 수 있음 */
+span{
+    border-width: 4px;
+    border-style: dashed;
+    border-color: blue;
+    display: inline-block;
+}
+
+/* css_boxmodel */
+/* div{
+    font-family: 'katuri';
+    background-color: rgb(205, 30, 71);
+    border : 3px solid rgb(127, 209, 72);
+    padding : 20px;
+    /* padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 40px; */
+    /* margin: 10px; 전체*/
+    /* margin: 10px 30px; top,bottom right,left */
+    /* margin: 10px 30px 20px; top right,left bottom */
+    /* top right bottom left */
+    /* margin: 10px 30px 20px 40px; */
+    /* content에서만 적용됨 */
+    /* width: 200px; height: 100px; */
+/*} */
+
+/* 인라인은 너비와 높이를 가질수 없음*/
+/* span {
+    font-family: 'katuri';
+    background-color: rgb(78, 83, 223);
+    border : 3px solid rgb(205, 30, 71);
+    padding: 10px;
+    margin: 20px;
+    width: 100px; height: 40px;
+    display: inline-block;
+} */
+
+@font-face {
+    font-family: "katuri";
+    src: url("KATURI.TTF") format('truetype')
+}
+@font-face {
+    font-family: "Consolas";
+    src: url("CONSOLA.TTF") format('truetype')
+}

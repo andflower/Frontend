@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font size</title>
+
+    <!-- Google font(Web Font) -> Rampart One -->
+    <!-- font size Regular400 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+
+    <!-- 단위(px, em, rem) -->
+    <!-- rgba(x1, x2, x3, x4) -->
+    <!-- a는 투명도 값 argument는 x4로 0~1사이의 값  -->
+    <!-- <style>
+        p{
+            font-family: "Consolas";
+            font-size: 11px;
+            color: gold;
+            line-height: 1.7;               /* 줄간격 */
+        }
+        h2{
+            font-family: 'Rampart One', cursive;
+            color: rgb(255,255,255);
+        }
+        h4{
+            font: serif;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        h5{
+            font-family: 'katuri';
+            color:rgb(69, 189, 236);
+        }
+        body{
+            background-color: #222222;
+        }
+        @font-face {
+            font-family: "katuri";
+            src: url("KATURI.TTF") format('truetype')
+        }
+        @font-face {
+            font-family: "Consolas";
+            src: url("CONSOLA.TTF") format('truetype')
+        }
+    </style> -->
+
+    <!-- css파일 적용시 css 파일을 링크해줘야 함 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Font-Size(in style.css)</h2>
+    <h2>Hello, Auto save is good?</h2>
+    <!-- lorem10 : 의미없는 10단어 생성 -->
+    <!-- serifm sans-serif, monospace, cursive, fantasy font -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, voluptatum?<br>
+        한글 및 영어 폰트 확인<br>
+        Consolas Font<br>
+        <div><hr>
+        <p>
+        -------------------------<br>
+        Gcc build in linux kernel<br>
+        -------------------------<br>
+        cd build<br>
+        <br>
+        CC=gcc-12 CXX=g++-12 cmake                                \<br>
+            &nbsp &nbsp -DCMAKE_BUILD_TYPE=Release                \<br>
+            &nbsp &nbsp -DCMAKE_INSTALL_PREFIX="/usr" 	          \<br>
+            &nbsp &nbsp -DCMAKE_C_COMPILER_LAUNCHER=ccache        \<br>
+            &nbsp &nbsp -DCMAKE_CXX_COMPILER_LAUNCHER=ccache      \<br>
+            &nbsp &nbsp -DCMAKE_C_FLAGS="-fuse-ld=lld"            \<br>
+            &nbsp &nbsp -DCMAKE_CXX_FLAGS="-fuse-ld=lld"          \<br>
+            &nbsp &nbsp -DCMAKE_OBJC_COMPILER_LAUNCHER=ccache     \<br>
+            &nbsp &nbsp -DCMAKE_OBJCXX_COMPILER_LAUNCHER=ccache   \<br>
+            ..<br>
+            <br>
+        make -j 4 install
+        </p>
+        <hr></div>
+    </p>
+    <h5>Web font -- Font family 변경(까투리체)</h5>
+    <h4>serif(명조체 + bold + 16px)</h4>
+</body>
+</html>

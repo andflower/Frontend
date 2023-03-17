@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back Ground</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+    <style>
+        /* 배경 이미지의 크기가 넘어 가면 --> right, bottom으로 크기가 커짐 */
+        div {
+            color: black;
+            box-sizing: border-box;
+            width: 300px; height: 300px;
+            border: 1px solid red;
+            background-color: rgb(89, 134, 206);
+            background-image: url("/img/640\,640.png");
+            /* background-repeat: no-repeat; 반복 안됨*/
+            background-repeat: no-repeat;
+            background-position: center;
+            /* background-size: 320px 320px; force size*/
+            background-size: cover;
+            font-family: 'katuri';
+            font-size: 60px;
+            color: rgb(55, 0, 255);
+            text-align: center;
+            /* vetical-align  */
+            line-height: 300px;
+        }
+        body {
+            background-color: #222222;
+            color: white;
+        }
+        @font-face {
+            font-family: "katuri";
+            src: url("KATURI.TTF") format('truetype')
+        }
+    </style>
+</head>
+<body>
+    <div>
+        콘텐츠
+    </div>
+</body>
+</html>
