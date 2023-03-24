@@ -6,8 +6,9 @@ body{
     color: black;
 }
 .parent{
-    background-color: rgb(0, 255, 153);
-    border: 3px solid blue;
+    background-color: #222222;
+    color: white;
+    border: 3px solid red;
     /* content size */
     width: 1000px;
     height: 500px;
