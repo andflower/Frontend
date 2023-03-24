@@ -1,0 +1,46 @@
+body{
+    background-color: #222222;
+    color: white;
+}
+.container{
+    width: 400px;
+}
+.btn{
+
+}
+.btn span{
+    background-color: white;
+    border: 2px solid #cccccc;
+    color: black;
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    padding: 5px;
+    /* top -> right -> bottom -> left */
+    border-radius: 10px 10px 0px 0px;
+    margin-right: -6px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn span:hover{
+    background-color: #222222;
+    color: white;
+}
+.tab{
+    border: 2px solid #cccccc;
+}
+.tab a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin : 10px;
+    height: 25px;
+    border-bottom: 1px solid red;
+}
+.tab a:first-child{
+
+}
+
+.tab a:last-child{
+    border-bottom: 1px solid #222222;
+}
