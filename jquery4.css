@@ -1,0 +1,46 @@
+body{
+    background-color: #222222;
+    color: white;
+    text-align: center;
+}
+
+/* .container{
+    width: 600px;
+} */
+
+a{
+    color: white;
+    text-decoration: none;
+    border: 2px solid #dddddd;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+a:hover{
+    background-color: white;
+    color: #222222;
+    transition: 0.5s;
+}
+
+.container div{
+    /* default size 15px */
+    font-size: 30px;
+    border: 2px solid #dddddd;
+    width: 327.5px;
+    height: 100px;
+    line-height: 100px;
+    padding: 10px;
+    margin-top: 5px;
+    text-align: center;
+    display: inline-block;
+    /* display: none; */
+}
+
+.container div.active{
+    background-color: white;
+    color: black;
+}
