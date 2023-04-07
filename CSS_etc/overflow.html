@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <style>
+        body{
+            background-color: #222222;
+            /*height: 100%;*/
+        }
+        .container {
+            /* height: 400px; */
+            background-color: #cccccc;
+            overflow: hidden;
+            width: 50%;
+        }
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: orangered;
+            border: 2px solid white;
+        }
+        .box:nth-child(1) {
+            float: left;
+        }
+        .box:nth-child(2) {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <!-- <div class="box">box3</div> -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(135, 178, 235);
+}
+.container {
+    background-color: #cccccc;
+    height: 97.5vh;
+    display: flex;
+}
+.item {
+    /* width: 200px; */
+    background-color: gold;
+    border: 2px solid white;
+    /* flex-grow: 10; */
+    /* 컨텐츠 사이즈에서 비율로 잡기 위해 */
+    /* flex-basis: 0; 으로 선언하여 flex-grow를 해줘야함 */
+    /* flex-basis: 0; */
+}
+.item:nth-child(odd) {
+    background-color: yell;
+}
+.item:nth-child(1) {
+    /* flex-grow: 1; */
+    /* grow, shrink, basis */
+    /* shrink (1 2 1), (1 2 3)으로 많이 쓰임 */
+    flex: 0 1 300px;
+}
+.item:nth-child(2) {
+    /* flex-grow: 2; */
+    /* flex-basis: 300px; */
+    /* flex-shrink: 1; */
+    flex: 0 1 300px;
+}
+.item:nth-child(3) {
+    /* flex-grow: 1; */
+    /* flex-basis: 300px; */
+    /* flex-shrink: 3; */
+    flex: 0 3 400px;
+}

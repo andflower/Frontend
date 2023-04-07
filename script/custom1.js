@@ -1,7 +1,7 @@
 $(".show-btn").click(function(){
-    $("div").show({});
+    $("div").show();
 });
 
 $(".hide-btn").click(function(){
-    $("div").hide({});
+    $("div").hide();
 });

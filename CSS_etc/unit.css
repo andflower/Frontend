@@ -1,0 +1,18 @@
+body{
+    background-color: #222222;
+    color: white;
+}
+.parent{
+    /* 16 * 8 = 128px */
+    /* font-size: 8em; */
+    font-size: 800%;
+    background-color: aqua;
+    height: 97.5vh;
+}
+.child{
+    /* (16 * 8) / 2  = 64px */
+    /* font-size: 0.5em; */
+    /* 16 / 2 = 8px */
+    /* font-size: 0.5rem; */
+    font-size: 50%;
+}
