@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 200vh;
+    color: white;
+}
+
+section {
+    background-image: url("./background.jpg");
+    background-size: cover;
+    height: 70vh;
+}
+
+section h1 {
+    font-size: 4em;
+    width: 200px;
+    line-height: 1.1;
+    position: absolute;
+    top: 50px;
+    left: 400px;
+    animation: ani 1s ease-in-out;
+}
+
+section .photo {
+    position: absolute;
+    width: 40%;
+    top: 50px;
+    right: 200px;
+}
+
+section div .pc-badge {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+}
+
+@keyframes ani {
+    from {
+        left: -100px;
+        opacity: 0.2;
+    }
+
+    to {
+        left: 400px;
+        opacity: 1;
+    }
+}

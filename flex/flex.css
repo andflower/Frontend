@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    height: 100vh;
+    margin: 80px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: 800;
+    /* flex box 왼쪽에서의 여백 */
+    margin-left: 1em;
+    
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 300px;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.box-main, .box-second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em;
+}
+
+.box-main {
+    width: 6.5em;
+    height: 7em;
+    font-size: 2em;
+    background-color: #111;
+    color: rgb(13, 223, 223);
+}
+
+.box-second {
+    width: 5em;
+    height: 5em;
+    font-size: 1.5em;
+    background-color: rgb(13, 223, 223);
+    color: #111;
+}
+
+.secondary-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer {
+    border-top: 2px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 150px;
+}

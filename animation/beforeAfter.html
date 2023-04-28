@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자 內 연산자</title>
+    <style>
+        * {
+            background-color: #222;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .gnb {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        a {
+            text-decoration: none;
+            font-family: 'katuri';
+        }
+        
+        .gnb a {
+
+        }
+
+        .gnb a::before {
+            content: '01';
+            background-color: blue;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            text-align: center;
+            line-height: 20px;
+            font-size: 14px;
+            margin: 3px;
+        }
+
+        .gnb a::after {
+            content: 'update';
+            background-color: red;
+            border-radius: 3px;
+            width: 60px;
+            margin: 5px;
+            padding : 0.5px;
+            display: inline-block;
+            text-align: center;
+            list-style: 20px;
+            /* width 가 있을 시 */
+            box-sizing: border-box;
+        }
+
+        @font-face {
+            font-family: "katuri";
+            src: url("./CSS_BOXMODEL/KATURI.TTF") format('truetype')
+        }
+    </style>
+</head>
+<body>
+    <div class="gnb">
+        <a href="#none">Busan Polytech</a>
+    </div>
+</body>
+</html>

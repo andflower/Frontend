@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바 스크립트 예제4</title>
+    <!-- <link rel="stylesheet" href="jsex.css"> -->
+    <style>
+        .alert-box {
+            background-color: blue;
+            color: white;
+            padding: 20px;
+            border: 5px;
+            margin-bottom: 10px;
+            display: none;
+        }
+        .alert-box p {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="alert-box" id="pop-box">
+        <p id="title">알림창임</p>
+        <button onclick="closeAlert()">닫기</button>
+    </div>
+    
+    <!-- 글자가 바뀜(아이디를 입력) -->
+    <button onclick="idAlert()">버튼1</button>
+    <!-- 비밀번호 입력 -->
+    <button onclick="passAlert()">버튼2</button>
+
+    <script>
+        function closeAlert() {
+            document.getElementById('pop-box').style.display = 'none';
+        }
+
+        function idAlert() {
+            document.getElementById('title').innerHTML = '아이디를 입력하세요.';
+            document.getElementById('pop-box').style.display = 'block';
+        }
+
+        function passAlert() {
+            document.getElementById('title').innerHTML = '비밀번호를 입력하세요.';
+            document.getElementById('pop-box').style.display = 'block';
+        }
+    </script>
+
+    
+</body>
+</html>

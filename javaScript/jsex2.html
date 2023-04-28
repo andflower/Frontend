@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바 스크립트 예제2</title>
+    <!-- <link rel="stylesheet" href="jsex.css"> -->
+    <style>
+        .alert-box {
+            background-color: blue;
+            color: white;
+            padding: 20px;
+            border: 5px;
+            margin-bottom: 10px;
+            font-size: 25px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="alert-box" id="pop-box">알림 박스
+        <button onclick="displayAlert(display='none')">닫기</button>
+    </div>
+    <button onclick="displayAlert(display='block')">버튼</button>
+
+
+    <!-- parameter 는 파이썬과 동일한 형식 사용가능 -->
+    <!-- script 언어라서 그런가? -->
+    <script>
+        function displayAlert(display) {
+            document.getElementById('pop-box').style.display = display;
+        }
+
+    </script>
+
+    <!-- 함수 정의 -->
+    <!-- function xx(){
+        ...
+    } -->
+    <!-- 함수 실행 -->
+    <!-- xx(); -->
+    
+</body>
+</html>

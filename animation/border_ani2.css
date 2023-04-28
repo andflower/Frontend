@@ -1,0 +1,112 @@
+body {
+    background-color: #222;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 0 0 0 2px white inset; */
+}
+
+.square {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 40px;
+    /* border: 1px solid red; */
+}
+
+.square span {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border: 1px solid white;
+    border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
+    /* width: 100%; */
+    /* height: 100%; */
+    animation: ani 5s linear infinite;
+}
+
+.square1:hover span{
+    background-color: rgb(241, 119, 74);
+    transition-delay: 200ms;
+    border: none;
+}
+
+.square2:hover span{
+    background-color: rgb(121, 239, 92);
+    transition-delay: 200ms;
+    border: none;
+}
+
+.square3:hover span{
+    background-color: rgb(74, 155, 241);
+    transition-delay: 200ms;
+    border: none;
+}
+
+/* .square span:nth-child(n) opacity 설정시 외곽선만 투명도 적용됨 */
+.square span:nth-child(1) {
+    animation-delay: 0ms;
+}
+
+.square span:nth-child(2) {
+    animation-delay: 750ms;
+    animation-direction: reverse;
+}
+
+.square span:nth-child(3) {
+    animation-delay: 2000ms;
+}
+
+.square:hover span:nth-child(1) {
+    opacity: 0.15;
+}
+
+.square:hover span:nth-child(2) {
+    opacity: 0.35;
+}
+
+.square:hover span:nth-child(3) {
+    opacity: 0.55;
+}
+
+/* .square:nth-child(1):hover span{
+    background-color: ㅇㅅㅇ;
+    border: none
+} */
+
+.square .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    text-align: center;
+}
+
+.square .content p {
+    font-size: 13px;
+    padding: 5px;
+}
+
+.square .content a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
+}
+
+@keyframes ani {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

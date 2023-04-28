@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(135, 178, 235);
+}
+.container {
+    background-color: #cccccc;
+    height: 97.5vh;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* align-items: center; */
+    align-content: space-around;
+}
+.item {
+    width: 200px;
+    background-color: gold;
+    border: 2px solid white;
+}
+.item:nth-child(odd) {
+    background-color: orangered;
+    
+    align-items: center;
+}

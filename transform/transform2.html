@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform 예제</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: #222;
+        }
+        .container {
+            width: 500px;
+            margin: 50px auto;
+        }
+        .img_box {
+            width: 100%;
+            overflow: hidden;
+        }
+        .img_box img {
+            transition-duration: 1.5s;
+        }
+        .img_box:hover>img {
+
+            transform: scale(1.2);
+        }
+        h3 {
+            color: orangered;
+            font-size: 26px;
+            font-weight: 900;
+            margin: 15px 0 5px 0;
+        }
+        p {
+            font-weight: 200;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="img_box">
+            <img src="http://picsum.photos/500/300" alt="dummy image">
+        </div>
+        <h3>좋아요 구독 알림설정</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+    </div>
+</body>
+</html>

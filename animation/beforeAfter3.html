@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: #222;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        a {
+            text-decoration: none;
+            font-family: 'katuri';
+            color: black;
+            background-color: white;
+            
+        }
+
+        .gnb {
+            list-style: none;
+            width: 600px;
+            background-color: #fff;
+            border-radius: 10px;
+            padding : 30px;
+        }
+
+        .gnb li {
+            float: left;
+            width: 120px;
+            text-align: center;
+            background-color: #fff;
+            box-sizing: border-box;
+        }
+
+        .gnb li a {
+            font-size: 14px;
+            position: relative;
+        }
+
+        .gnb li a::before {
+            content: '';
+            background-color: blue;
+            width: 0%;
+            height: 2px;
+            position: absolute;
+            display: inline-block;
+            bottom: -10%;
+            transition: 0.5s;
+            left: 50%;
+        }
+
+        .gnb li a::after {
+            content: '';
+            background-color: blue;
+            width: 0%;
+            height: 2px;
+            position: absolute;
+            display: inline-block;
+            text-align: left;
+            bottom: -10%;
+            transition: 0.5s;
+            right: 50%;
+        }
+
+        .gnb li a:hover::before {
+            width: 50%;
+        }
+
+        .gnb li a:hover::after {
+            width: 50%;
+        }
+
+
+        @font-face {
+            font-family: "katuri";
+            src: url("./CSS_BOXMODEL/KATURI.TTF") format('truetype')
+        }
+    </style>
+</head>
+<body>
+    <ul class="gnb">
+        <li><a href="#none">HOME</a></li>
+        <li><a href="#none">ABOUT</a></li>
+        <li><a href="#none">SERVICE</a></li>
+        <li><a href="#none">PORTFOLIO</a></li>
+        <li><a href="#none">CONTENT</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loading {
+    /* border: 1px solid red; */
+    width: 60px;
+    height: 60px;
+    position: relative;
+}
+
+.loading span {
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.7);
+    animation: text_ani 1.05s linear infinite;
+}
+
+.loading .circle {
+    border: 5px solid gold;
+    width: inherit;
+    height: inherit;
+    /* 부모의 크기를 따라감 */
+    box-sizing: border-box;
+    border-radius: 50%;
+    border-right-color: white;
+    border-left-color: white;
+    animation: circle_ani 2.1s linear infinite;
+}
+
+@keyframes circle_ani {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes text_ani {
+    0%{
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}

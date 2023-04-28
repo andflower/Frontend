@@ -1,0 +1,70 @@
+body {
+    background-color: #222;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 0 0 0 1px #fff inset; */
+}
+.loading {
+    width: 30px;
+    height: 30px;
+    /* border: 2px solid blue; */
+    position: relative;
+}
+
+.loading span {
+    /* display: inline-block; */
+    /* position: absolute 시 inline element 가 inline-block 으로 converting */
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: orangered;
+    animation: ani 1.5s linear infinite;
+}
+
+.loading span:nth-child(1) {
+    animation-delay: 0ms;
+}
+
+.loading span:nth-child(2) {
+    animation-delay: 750ms;
+}
+
+@keyframes ani {
+    0% {
+        top: 0%;
+        left: 0%;
+        background-color: rgb(249, 109, 109);
+    }
+
+    25% {
+        top: 0%;
+        left: calc(100% - 10px);
+        background-color: rgb(246, 187, 79);
+        /* background-color: orange; */
+    }
+
+    50% {
+        top: calc(100% - 10px);
+        left: calc(100% - 10px);
+        background-color: rgb(63, 115, 63);
+    }
+
+    75% {
+        top: calc(100% - 10px);
+        left: 0%;
+        /* background-color: yellowgreen; */
+        background-color: rgb(111, 111, 246);
+    }
+
+    100% {
+        top: 0%;
+        left: 0%;
+        background-color: rgb(113, 76, 113);
+    }
+}

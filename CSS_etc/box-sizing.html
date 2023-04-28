@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-sizing content-box / border-box</title>
+    <style>
+        * {
+            background-color: #222;
+            color: white;
+        }
+        .box1 {
+            border: 3px solid red;
+
+            /* content의 크기 */
+            width: 200px;
+            height: 100px;
+            padding: 20px;
+            box-sizing: content-box;
+            margin-bottom: 100px;
+        }
+        .box2 {
+            border: 3px solid red;
+
+            /* boarder 전체 크기 */
+            width: 200px;
+            height: 100px;
+            padding: 20px;
+            /* 이걸 많이 사용함 */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        hello world!!!
+        content-box
+    </div>
+    <div class="box2">
+        hello world!!!
+        border-box
+    </div>
+</body>
+</html>

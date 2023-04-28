@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition 예제</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #222222;
+        }
+        .container {
+            width: 400px;
+            height: 100px;
+            border: 2px solid red;
+            margin: 100px auto;
+            position: relative;
+        }
+        .gage {
+            width: 0%;
+            height: 100%;
+            background-color: #d06106;
+            transition-duration: 1s;
+        }
+        .container:hover .gage{
+            width: 100%;
+        }
+        .container:hover h3 {
+            color: black;
+            transition-duration: 0.3s;
+            transition-delay: 0.7s;
+        }
+        h3 {
+            color: white;
+            position: absolute;
+            background-color: transparent;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="gage"></div>
+        <h3>더 보기 &rarr;</h3>
+    </div>
+</body>
+</html>
