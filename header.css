@@ -33,6 +33,7 @@
 .header_title {
     font-size: 1.2rem;
     margin-left: 6px;
+    transition: 0.5s;
 }
 
 .header_center {
@@ -89,13 +90,16 @@
 
 @media screen and (max-width: 800px) {
     .header_title {
-        display: none;
+        /* display: none; */
+        opacity: 0;
+        transition: 0.3s;
     }
 }
 
 @media screen and (max-width: 400px) {
     .header_center {
-        display: none;
+        opacity: 0;
+        transition: 0.5s;
     }
     .header_search {
         display: block;

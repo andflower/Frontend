@@ -39,17 +39,30 @@
     color: white;
 }
 
+.nav_wrapper hr {
+    border-color: #666;
+    display: inline-block;
+    width: 100%;
+}
+
 @media screen and (max-width: 800px) {
     .nav_menu {
-        display: none;
+        opacity: 0;
+        position: absolute;
+        width: 20px;
     }
+
     .nav_wrapper {
+        width: 60px;
         min-width: 0;
+        position: relative;
+        transition: 0.5s;
     }
 }
 
 @media screen and (max-width: 400px) {
     .nav_wrapper {
-        display: none;
+        opacity: 0;
+        transition: 0.5s;
     }
 }

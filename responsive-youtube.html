@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="navigation.css">
     <link rel="stylesheet" href="thumbs.css">
     <script src="https://kit.fontawesome.com/eff58c9bbf.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 </head>
 <body>
     <!-- <div class="header">
@@ -60,17 +61,42 @@
 
     <nav class="nav">
         <ul class="nav_wrapper">
+            <section class=""></section>
             <li>
-                <button class="nav_icon">🧾</button>
+                <button class="nav_icon"><i class="fa-solid fa-house"></i></button>
+                <button class="nav_menu">홈</button>
+            </li>
+            <li>
+                <button class="nav_icon"><i class="fa-solid fa-bolt"></i></button>
                 <button class="nav_menu">Shorts</button>
             </li>
             <li>
-                <button class="nav_icon">👍</button>
+                <button class="nav_icon"><i class="fa-brands fa-square-youtube"></i></button>
                 <button class="nav_menu">구독</button>
-            </li> 
+            </li>
             <li>
-                <button class="nav_icon">👜</button>
+                <button class="nav_icon"><i class="fa-solid fa-window-restore"></i></button>
                 <button class="nav_menu">보관함</button>
+            </li>
+            <li>
+                <button class="nav_icon"><i class="fa-solid fa-clock-rotate-left"></i></button>
+                <button class="nav_menu">시청 기록</button>
+            </li>
+            <li>
+                <button class="nav_icon"><i class="fa-brands fa-square-youtube"></i></button>
+                <button class="nav_menu">내 동영상</button>
+            </li>
+            <li>
+                <button class="nav_icon"><i class="fa-solid fa-clock"></i></button>
+                <button class="nav_menu">나중에 볼 동영상</button>
+            </li>
+            <li>
+                <button class="nav_icon"><i class="fa-solid fa-thumbs-up"></i></button>
+                <button class="nav_menu">좋아요 표시한 동영상</button>
+            </li>
+            <li>
+                <button class="nav_icon"><i class="fa-solid fa-angle-down"></i></button>
+                <button class="nav_menu">더보기</button>
             </li>
         </ul>
     </nav>
@@ -256,9 +282,20 @@
         </div>
     </section>
     <script>
-        function doAction() {
-            
-        }
+        // li태그 hover시 폰트어썸의 클래스의 이름 fa-beat 추가, 삭제
+        var listItems = document.querySelectorAll('li');
+
+        listItems.forEach(function(listItem) {
+            var iconButton = listItem.querySelector('.nav_icon i');
+
+            listItem.addEventListener('mouseover', function() {
+                iconButton.classList.add('fa-beat');
+            });
+
+            listItem.addEventListener('mouseout', function() {
+                iconButton.classList.remove('fa-beat');
+            });
+        });
     </script>
 </body>
 </html>
