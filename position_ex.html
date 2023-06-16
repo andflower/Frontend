@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포지션에 대한 이해</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #222;
+            color: white;
+        }
+
+        .container {
+            border: 2px solid red;
+            width: 1000px;
+            height: 700px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .nor, .rel, .abs {
+            width: 400px;
+            height: 200px;
+        }
+
+        .nor {
+            background-color: #9d8b8b;
+        }
+
+        .rel {
+            background-color: orangered;
+            /* position: relative;
+            top: 20px;
+            left: 50px; */
+        }
+
+        .abs {
+            background-color: cornflowerblue;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nor">normal</div>
+        <div class="rel">relative</div>
+        <div class="abs">absolute</div>
+        <span>안녕</span>
+    </div>
+</body>
+</html>

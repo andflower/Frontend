@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    /* 임의적으로 테두리 생기는걸 방지 */
+    outline: none;
+}
+
+body {
+    margin: 0;
+	padding: 0;
+    background-color: #222;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol, ul {
+	list-style: none;
+}

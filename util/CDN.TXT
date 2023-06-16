@@ -1,11 +1,22 @@
-[Font Awesome]
+[Font Awesome 6]
 <script src="https://kit.fontawesome.com/eff58c9bbf.js" crossorigin="anonymous"></script>
+<i class="fa-brands fa-facebook"></i>
+<i class="fa-brands fa-twitter"></i>
+<i class="fa-brands fa-instagram"></i>
+<i class="fa-regular fa-user"></i>
+<i class="fa-regular fa-lock"></i>
+
+[Font Awesome 4]
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+Unicode: f004 --> filled heart
+Unicode: f08a --> unfilled heart
 
 @import url('./font/GamjaFlower-Regular.ttf')
 font-family: 'Noto Sans Kr', sans-serif;
 
 
-한글
+[한글 Noto Sans KR]
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 </style>
@@ -13,9 +24,64 @@ font-family: 'Noto Sans Kr', sans-serif;
 font-family: 'Noto Sans KR', sans-serif;
 
 
-영어
+[영어 Roboto font]
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 </style>
-font-family: 'Noto Sans KR', sans-serif;
 font-family: 'Roboto', sans-serif;
+
+[jQuer]
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+[XEICON]
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+@import url('//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+<i class="xi-google"></i> #EA4335 #dd4b39
+<i class="xi-facebook"></i> #1877F2 #3b5998
+<i class="xi-naver"></i> #03C75A #03e363
+<i class="xi-kakaotalk"></i> #FAE100 #ffeb3b
+<i class="xi-close"></i> #000
+
+크기 조절 example
+<i class="xi-face xi-x"></i> xi-x
+<i class="xi-face xi-2x"></i> xi-2x
+<i class="xi-face xi-3x"></i> xi-3x
+<i class="xi-face xi-4x"></i> xi-4x
+<i class="xi-face xi-5x"></i> xi-5x
+
+■ Reference URL
+FontAwesome 4.7 CheatSheet
+https://fontawesome.bootstrapcheatsheets.com/
+
+FontAwesome 4.7 Official Website
+https://fontawesome.com/v4.7.0/icons/
+
+XEICON Ver2.3.3
+https://xpressengine.github.io/XEIcon/
+
+Web Gradients
+https://webgradients.com/
+
+W3 Schools Color Picker
+https://www.w3schools.com/colors/colors_picker.asp
+
+Flat UI colors
+https://flatuicolors.com/
+
+Social Colors
+https://www.materialui.co/socialcolors
+
+눈누 한글 폰트
+https://noonnu.cc/
+
+테마포레스트(웹디자인판매)
+https://themeforest.net/
+
+지디웹(우수웹 선정)
+https://www.gdweb.co.kr/main/
+
+텍스트 애니메이션(Tobias Ahlin)
+https://tobiasahlin.com/moving-letters/
+
+XEICON
+http://xpressengine.github.io/XEIcon/

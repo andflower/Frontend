@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(24,26,27);
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.5em;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+}
+
+/* Dropdown Navigation */
+.program {
+    display: flex;
+    justify-content: center;
+}
+
+.inner {
+    width: 1150px;
+}
+
+.program .inner h1 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 25px;
+    margin-top: 20px;
+}
+
+.program .inner .items {
+    display: flex;
+    gap: 40px;
+}
+
+.program .inner .item {
+    /* border: 1px solid red; */
+    flex: 1;
+    position: relative;
+}
+
+/* .program .inner .items .item .item-list { */
+.items .item .item-list {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.items .item:nth-child(1) .item-list {
+    background-color: #16579E;
+}
+
+.items .item:nth-child(2) .item-list {
+    background-color: #5049A9;
+}
+
+.items .item:nth-child(3) .item-list {
+    background-color: #8C66C1;
+}
+
+.items .item .item-list .btn {
+    background-color: rgb(24,26,27);
+    padding: 5px;
+    margin: 3px;
+    width: 80px;
+    display: inline-block;
+}
+
+.items .item .item-list .btn.download  {
+    width: 200px;
+}
+
+.items .item .item-info {
+    background-color: rgb(24,26,27);
+    font-size: 14px;
+    padding: 0 5px;
+    position: absolute;
+    display: none;
+}
+
+.items .item:nth-child(1) .item-info {
+    border: 3px solid #16579E;
+}
+
+.items .item:nth-child(2) .item-info {
+    border: 3px solid #5049A9;
+}
+
+.items .item:nth-child(3) .item-info {
+    border: 3px solid #8C66C1;
+}
+
+.item .item-info ul {
+    list-style: none;
+    background-color: #111;
+    padding: 0 10px;
+}
+
+.item .item-info ul li::before {
+    content: '-';
+    margin-right: 5px;
+}
+
+.temp img {
+    width: 1150px;
+}

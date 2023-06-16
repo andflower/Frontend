@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그리드/grid 연습</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 1rem;
+            background-color: #000;
+            height: 100vh;
+
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+
+            /* display: grid;
+            justify-items: center;
+            align-items: center; */
+
+            display: grid;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 200px;
+            grid-gap: 1rem;
+
+            grid-template-areas: 
+            'a a a'
+            'b c c'
+            'b d g'
+            'e f g'
+            /* 공백은 .(점)으로 표시 */
+            ;
+        }
+
+        .image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .image1{
+            grid-area: a;
+            /* image1 너는 grid-area 의 a 영역에 표시돼 */
+        }
+        .image2{grid-area: b;}
+        .image3{grid-area: c;}
+        .image4{grid-area: d;}
+        .image5{grid-area: e;}
+        .image6{grid-area: f;}
+        .image7{grid-area: g;}
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <img class="image image1" 
+        src="https://images.unsplash.com/photo-1534086586878-bc9236d69a40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1223&q=800" alt="summer">
+        <img class="image image2" 
+        src="https://images.unsplash.com/photo-1527661591475-527312dd65f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHN1bW1lcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="summer">
+        <img class="image image3" 
+        src="https://images.unsplash.com/photo-1553602889-f85ab725f992?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzc5fHxzdW1tZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="summer">
+        <img class="image image4" 
+        src="https://images.unsplash.com/photo-1505394033641-40c6ad1178d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzR8fHN1bW1lcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="summer">
+        <img class="image image5" 
+        src="https://images.unsplash.com/photo-1484980859177-5ac1249fda6f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA4fHxzdW1tZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="summer">
+        <img class="image image6" 
+        src="https://images.unsplash.com/photo-1546536582-cdabb1daf509?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fHN1bW1lcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60
+        " alt="summer">
+        <img class="image image7" 
+        src="https://images.unsplash.com/photo-1486428263684-28ec9e4f2584?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTIzfHxzdW1tZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="summer">
+    </section>
+</body>
+
+</html>
+
+<!-- ##### summer image #####
+야자수 세로 :
+https://images.unsplash.com/photo-1572246538688-3f326dca3951?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c3VtbWVyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60
+수박 세로 :
+https://images.unsplash.com/photo-1527661591475-527312dd65f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHN1bW1lcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60
+아이스티 세로 :
+https://images.unsplash.com/photo-1486428263684-28ec9e4f2584?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTIzfHxzdW1tZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60
+
+
+해변 정사각 :
+https://images.unsplash.com/photo-1546536582-cdabb1daf509?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fHN1bW1lcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60
+해변정자 정사각 :
+https://images.unsplash.com/photo-1521089815383-cf2b2cf7f0f0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjJ8fHN1bW1lcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60
+아이스크림 정사각 :
+https://images.unsplash.com/photo-1505394033641-40c6ad1178d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzR8fHN1bW1lcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60
+과일이미지 정사각 :
+https://images.unsplash.com/photo-1484980859177-5ac1249fda6f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA4fHxzdW1tZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60
+
+해변 가로 :
+https://images.unsplash.com/photo-1618064541372-289bdb6f5b7b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTYyfHxzdW1tZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60
+해변 야자수 가로 :
+https://images.unsplash.com/photo-1553602889-f85ab725f992?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzc5fHxzdW1tZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60
+해질녁 가로 :
+https://images.unsplash.com/photo-1534086586878-bc9236d69a40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1223&q=80 -->

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-weight: 400;
+            /*background: (45deg,#DEF5E5 ,#FEFCF3,#DBA39A); */
+            background: rgb(215, 233, 163);
+            background: radial-gradient( rgba(226, 226, 169, 0.997), rgb(212, 230, 146), rgba(165, 42, 42, 0.186) );
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        a {
+            text-decoration: none;
+            color: #222;
+        }
+
+        .gnb {
+            list-style: none;
+            background-color: white;
+            width: 800px;
+            border-radius: 10px;
+            padding: 30px;
+            display: flex;
+        }
+
+        .gnb li {
+            flex: 1;
+            text-align: center;
+        }
+
+        .gnb li a {
+            font-size: 14px;
+            position: relative;
+        }
+
+        .gnb li a::before {
+            content: '';
+            position: absolute;
+            background-color: blue;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 50%;
+            transition: 0.5s;
+            transform: translateX(-50%);
+        }
+
+        .gnb li a:hover::before {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="gnb">
+        <li><a href="#none">공지사항</a></li>
+        <li><a href="#none">입학안내</a></li>
+        <li><a href="#none">학과안내</a></li>
+        <li><a href="#none">학사안내</a></li>
+        <li><a href="#none">캠퍼스생활</a></li>
+        <li><a href="#none">취업정보</a></li>
+        <li><a href="#none">대학생활</a></li>
+    </div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    
+    background-color: #222;
+    color: white;
+
+    line-height: 1.5em;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    /* height: 100vh; */
+}
+
+.inner {
+    width: 1100px;
+    /* border: 1px solid red; */
+}
+
+.heading {
+    /* border: 1px solid red; */
+    font-size: 40px;
+    text-align: center;
+    font-weight: 400;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.heading::after {
+    content: '';
+    background-color: orangered;
+    height: 3px;
+    width: 90px;
+    position: absolute;
+    bottom: 0;
+    left: 47%;
+}
+
+.items {
+    /* border: 1px solid red; */
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item {
+    vertical-align: top;
+    width: 350px;
+    /* background-color: aliceblue; */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.item h2 {}
+
+.item p {
+    font-size: 18px;
+    height: 160px;
+}
+
+.item:hover .photo img {
+    transform: scale(1.2);
+}
+
+.photo {
+    height: 200px;
+    overflow: hidden;
+}
+
+.photo img{
+    width: 100%;
+    height: 200px;
+}
+
+.user img {
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.comment {
+    padding-top: 8px;
+    border: 1px solid red;
+}
+
+.btn-explore {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(51, 51, 242);
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 2px solid skyblue;
+}
+
+.user-info {
+    /* .user-info span:nth-child(1)의 부모 */
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-info span {
+    display: flex;
+    width: 45%;
+    align-items: center;
+    /* border: 1px solid red; */
+    /* display: inline-block; */
+}
+
+.user-info span:nth-child(1) {
+    /* float: left; */
+    /* vertical-align: middle; */
+    justify-content: flex-start;
+}
+
+.user-info span:nth-child(2) {
+    /* float: right; */
+    /* text-align: right; */
+    justify-content: flex-end;
+}

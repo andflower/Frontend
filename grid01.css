@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #222;
+    color: #222;
+}
+
+.item {
+    text-align: center;
+    border: 2px solid #aaa;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.color1 { background-color: lightcoral;}
+.color2 { background-color: orange;}
+.color3 { background-color: yellow;}
+.color4 { background-color: lightgreen;}
+.color5 { background-color: skyblue;}
+
+.container {
+    display: grid;
+    /* grid-template-columns: 150px 150px 150px 150px; */
+    /* grid-template-columns: repeat(3, 20%); */
+
+    /* fraction 공간 비율 분수 */
+    /* 25% 50% 25% */
+    /* grid-template-columns: 1fr 2fr 1fr; */
+    grid-template-columns: 150px repeat(2, 1fr);
+
+    /* grid-template-rows: 150px 200px 100px; */
+    /* grid-template-rows: repeat(4, 1fr); */
+    /* grid-template-rows: 1fr 2fr 3fr 2fr; */
+    /* grid-auto-rows: 150px; */
+    grid-auto-rows: minmax(200px, auto);
+    /* grid-column-gap: 10px; */
+    /* grid-row-gap: 20px; */
+    /* grid-gap: 10px; */
+    grid-gap: 10px 20px;
+}

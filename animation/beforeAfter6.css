@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans Kr', sans-serif;
+    line-height: 1.5em;
+    background-color: lightgreen;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+.gnb {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    /*  */
+    box-shadow: 0, 0, 20px rgba(0, 0, 0, 0.15);
+}
+
+.gnb a {
+    width: 80px;
+    height: 30px;
+    display: inline-block;
+    /* 글자 중앙에 위치 */
+    line-height: 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.gnb a::before, .gnb a::after {
+    position: absolute;
+    content: attr(data-link);
+    /* text-align: center; */
+    width: 100%;
+    transition: 0.3s;
+}
+
+.gnb a::before {
+    top: 0;
+    left: 0;
+}
+
+.gnb a::after {
+    top : 100%;
+    left: 0;
+    color: lightgreen;
+}
+
+.gnb a:hover::before {
+    top: -100%;
+}
+
+.gnb a:hover::after {
+    top: 0;
+}
